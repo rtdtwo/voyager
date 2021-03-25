@@ -1,32 +1,34 @@
 {
   "files": {
-    "main.css": "/voyager/static/css/main.be93ba7a.chunk.css",
-    "main.js": "/voyager/static/js/main.fa1bf9c4.chunk.js",
-    "main.js.map": "/voyager/static/js/main.fa1bf9c4.chunk.js.map",
-    "runtime-main.js": "/voyager/static/js/runtime-main.176b5f4c.js",
-    "runtime-main.js.map": "/voyager/static/js/runtime-main.176b5f4c.js.map",
+    "main.css": "/voyager/static/css/main.6e7c493e.chunk.css",
+    "main.js": "/voyager/static/js/main.629bc68b.chunk.js",
+    "main.js.map": "/voyager/static/js/main.629bc68b.chunk.js.map",
+    "runtime-main.js": "/voyager/static/js/runtime-main.a1d32400.js",
+    "runtime-main.js.map": "/voyager/static/js/runtime-main.a1d32400.js.map",
     "static/css/2.150d169a.chunk.css": "/voyager/static/css/2.150d169a.chunk.css",
-    "static/js/2.00ce7bc6.chunk.js": "/voyager/static/js/2.00ce7bc6.chunk.js",
-    "static/js/2.00ce7bc6.chunk.js.map": "/voyager/static/js/2.00ce7bc6.chunk.js.map",
-    "static/js/3.d33ea103.chunk.js": "/voyager/static/js/3.d33ea103.chunk.js",
-    "static/js/3.d33ea103.chunk.js.map": "/voyager/static/js/3.d33ea103.chunk.js.map",
+    "static/js/2.dde90d8b.chunk.js": "/voyager/static/js/2.dde90d8b.chunk.js",
+    "static/js/2.dde90d8b.chunk.js.map": "/voyager/static/js/2.dde90d8b.chunk.js.map",
+    "static/js/3.6c3f3725.chunk.js": "/voyager/static/js/3.6c3f3725.chunk.js",
+    "static/js/3.6c3f3725.chunk.js.map": "/voyager/static/js/3.6c3f3725.chunk.js.map",
     "index.html": "/voyager/index.html",
     "static/css/2.150d169a.chunk.css.map": "/voyager/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.be93ba7a.chunk.css.map": "/voyager/static/css/main.be93ba7a.chunk.css.map",
-    "static/js/2.00ce7bc6.chunk.js.LICENSE.txt": "/voyager/static/js/2.00ce7bc6.chunk.js.LICENSE.txt",
+    "static/css/main.6e7c493e.chunk.css.map": "/voyager/static/css/main.6e7c493e.chunk.css.map",
+    "static/js/2.dde90d8b.chunk.js.LICENSE.txt": "/voyager/static/js/2.dde90d8b.chunk.js.LICENSE.txt",
     "static/media/add.8950a2d2.svg": "/voyager/static/media/add.8950a2d2.svg",
-    "static/media/aqua-theme.37cc316e.svg": "/voyager/static/media/aqua-theme.37cc316e.svg",
+    "static/media/aeroplane-gray.5e6bd7aa.svg": "/voyager/static/media/aeroplane-gray.5e6bd7aa.svg",
     "static/media/download.b58b73d4.svg": "/voyager/static/media/download.b58b73d4.svg",
+    "static/media/house.1618b123.svg": "/voyager/static/media/house.1618b123.svg",
     "static/media/logo-full-aqua.c7bfa860.svg": "/voyager/static/media/logo-full-aqua.c7bfa860.svg",
     "static/media/logo-full-sunset.c614165c.svg": "/voyager/static/media/logo-full-sunset.c614165c.svg",
-    "static/media/settings.371a91de.svg": "/voyager/static/media/settings.371a91de.svg",
-    "static/media/sunset-theme.6e556eba.svg": "/voyager/static/media/sunset-theme.6e556eba.svg"
+    "static/media/marker-california.62e460ee.svg": "/voyager/static/media/marker-california.62e460ee.svg",
+    "static/media/marker-maldives.bde5d980.svg": "/voyager/static/media/marker-maldives.bde5d980.svg",
+    "static/media/settings.371a91de.svg": "/voyager/static/media/settings.371a91de.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.176b5f4c.js",
+    "static/js/runtime-main.a1d32400.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.00ce7bc6.chunk.js",
-    "static/css/main.be93ba7a.chunk.css",
-    "static/js/main.fa1bf9c4.chunk.js"
+    "static/js/2.dde90d8b.chunk.js",
+    "static/css/main.6e7c493e.chunk.css",
+    "static/js/main.629bc68b.chunk.js"
   ]
 }

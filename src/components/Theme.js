@@ -4,14 +4,11 @@ import LogoSunset from '../assets/logo-full-sunset.svg';
 import MarkerMaldives from '../assets/icons/marker-maldives.svg';
 import MarkerCalifornia from '../assets/icons/marker-california.svg';
 
-import HomeMarker from '../assets/icons/house.svg';
-
 const themes = {
     'california': {
         id: 'california',
         label: 'California',
-        homeMarker: HomeMarker,
-        marker: MarkerCalifornia,
+        markerFileName: 'marker-california.svg',
         logo: LogoSunset,
         gradient: 'gradient-california',
         primary: '#FDA601',
@@ -20,8 +17,7 @@ const themes = {
     'maldives': {
         id: 'maldives',
         label: 'Maldives',
-        homeMarker: HomeMarker,
-        marker: MarkerMaldives,
+        markerFileName: 'marker-maldives.svg',
         logo: LogoAqua,
         gradient: 'gradient-maldives',
         primary: '#2D9CDB',

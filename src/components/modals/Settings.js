@@ -1,43 +1,57 @@
 import React from 'react';
+import { useStore } from 'react-context-hook';
+
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
 
-import AquaThemeIcon from '../../assets/icons/aqua-theme.svg';
-import SunsetThemeIcon from '../../assets/icons/sunset-theme.svg';
+import { setTheme as setThemeStorage } from '../../utils/StorageManager';
+import Themes from '../../theme/Theme';
 
 const SettingsModal = (props) => {
+    const [theme, setTheme] = useStore('theme');
+
+    const handleThemeChange = (event) => {
+        const newTheme = Themes[event.target.value];
+        setTheme(newTheme);
+        setThemeStorage(newTheme);
+    }
+
+    const getThemeOptions = () => {
+        return Object.keys(Themes).map(key => {
+            const item = Themes[key];
+            return <option key={item.id} value={item.id} className="regular-text">
+                {item.label}
+            </option>
+        })
+    }
+
     return (
-        <Modal show={props.show} onHide={() => props.handleClose()}>
+        <Modal centered show={props.show} onHide={() => props.handleClose()}>
             <Modal.Header closeButton>
                 <Modal.Title className="headline">SETTINGS</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <Row>
-                    <Col md={4}>
-                        <p className="p-0 m-0 medium-text mb-3 ">THEME</p>
+                    <Col xs={12} md={6}>
+                        <p className="p-0 m-0 medium-text"><b>THEME</b></p>
+                        <p className="p-0 m-0 small-text">Currently set to {theme.label}</p>
                     </Col>
-                    <Col md={8} className="m-0 p-0 ">
-                        <div className="float-left text-center ml-2 mr-2">
-                            <img src={AquaThemeIcon} width="56px" />
-                            <p className="mt-1 small-text"><small>MALDIVES</small></p>
-                        </div>
-                        <div className="float-left text-center ml-2 mr-2">
-                            <img src={SunsetThemeIcon} width="56px" />
-                            <p className="mt-1 small-text"><small>CALIFORNIA</small></p>
-                        </div>
+                    <Col xs={12} md={6}>
+                        <Form.Group>
+                            <Form.Control
+                                as="select"
+                                className="regular-text"
+                                onChange={handleThemeChange.bind(this)}
+                                defaultValue={theme.id}>
+                                {getThemeOptions()}
+                            </Form.Control>
+                        </Form.Group>
+
                     </Col>
                 </Row>
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={() => props.handleClose()}>
-                    Close
-          </Button>
-                <Button variant="primary" onClick={() => props.handleClose()}>
-                    Save
-          </Button>
-            </Modal.Footer>
         </Modal>
     )
 };

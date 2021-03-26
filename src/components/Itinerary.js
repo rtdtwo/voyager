@@ -15,10 +15,9 @@ import { getItinerary } from '../utils/StorageManager';
 
 const Itinerary = (props) => {
     const [theme] = useStore('theme');
-    const [showAddModal, setShowAddModal] = useState(false);
     const [itinerary, setItinerary] = useStore('itinerary');
-
-    const [selectedDestination, setSelectedDestination] = useState(null)
+    const [selectedDestination, setSelectedDestination] = useStore('selectedDestination');
+    const [showAddModal, setShowAddModal] = useState(false);
 
     const closeAddModal = (refreshItinerary) => {
         setShowAddModal(false);
@@ -64,7 +63,7 @@ const Itinerary = (props) => {
                             {renderItinerary()}
                         </div>
                         : <div className="text-center p-5">
-                            <img src={AeroplaneGray} width="30%" />
+                            <img src={AeroplaneGray} width="30%" alt="" />
                             <p className="p-0 m-0 mt-4 small-text all-caps">Add some destinations to begin. Your destinations are stored locally and will be deleted if browser data is cleared.</p>
                         </div>
                 }

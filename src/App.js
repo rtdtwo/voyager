@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { withStore } from 'react-context-hook';
 
 import { Row, Col } from 'react-bootstrap';
@@ -38,5 +38,9 @@ const App = () => {
   );
 }
 
-const globalState = { theme: getThemeById(getTheme()), itinerary: getItinerary(), home: getHome()};
+const globalState = { 
+  theme: getThemeById(getTheme()), 
+  itinerary: getItinerary(), 
+  home: getHome(),
+  selectedDestination: null};
 export default withStore(App, globalState);

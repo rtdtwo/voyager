@@ -9,11 +9,13 @@ import { default as bezierSpline } from '@turf/bezier-spline';
 
 import { getMidpoint } from '../utils/Utils';
 
+let leafletMap = null;
 
 const Map = (props) => {
     const [itinerary] = useStore('itinerary');
     const [theme] = useStore('theme');
     const [home] = useStore('home');
+    const [selectedDestination] = useStore('selectedDestination');
 
     const homeMarkerIcon = new Leaflet.Icon({
         iconUrl: theme.homeMarker,
@@ -78,15 +80,26 @@ const Map = (props) => {
                 lineJoin: 'round'
             }
 
-            return <GeoJSON data={curved} style={lineStyle} />
+            return <GeoJSON data={curved} style={lineStyle} key={currentLatLon} />
         })
     }
+
+    const southWest = Leaflet.latLng(-90, -180);
+    const northEast = Leaflet.latLng(90, 180);
+    const bounds = Leaflet.latLngBounds(southWest, northEast);
+
+    const centerPoint = selectedDestination !== null ? [selectedDestination.latitude, selectedDestination.longitude] : [0, 0]
+    const zoom = selectedDestination !== null ? 4 : 2;
+    leafletMap?.setView(centerPoint, zoom);
 
     return (
         <MapContainer
             className={props.className}
             center={[0, 0]}
+            maxBounds={bounds}
+            whenCreated={map => { leafletMap = map }}
             zoom={2}
+            minZoom={2}
             zoomControl={false}>
             <TileLayer
                 attribution='Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'

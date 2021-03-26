@@ -15,7 +15,7 @@ Head [here](https://tatirajurishabh.github.io/voyager/) for a working demo.
 # Data storage
 The web app has no data transfer involved whatsoever, except for loading the map data when you're moving and zooming around. This is achieved by storing data in the browser's local storage. Hence, clearing browser data will result in all data to be permanently erased. So, tread cautiously. A backup and restore feature will be implemented soon.
 
-# To-do:
+# To-do
 - [ ] Change home city
 - [ ] Export and import data
 - [ ] Destination notekeeping
@@ -25,6 +25,11 @@ The web app has no data transfer involved whatsoever, except for loading the map
 ![](https://i.postimg.cc/rpfs0DNK/voyager1.png)
 ![](https://i.postimg.cc/Y9VSRTV7/voyager2.png)
 ![](https://i.postimg.cc/yWC84csr/voyager3.png)
+
+# Credits
+- The folks at [Webloom Inc.](https://webloominc.com), my previous employers, for pushing me into React.js.  
+- [Akash Joshi](https://github.com/akash-joshi), a former colleague and a good friend. His React articles have been a lot of help.
+- Anushka Ramteke, for the endless travel talks that inspired me to make this, and for the color schemes!
 
 # License
 The MIT License (MIT)

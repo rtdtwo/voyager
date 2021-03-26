@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/voyager/static/css/main.6e7c493e.chunk.css",
-    "main.js": "/voyager/static/js/main.68bfe246.chunk.js",
-    "main.js.map": "/voyager/static/js/main.68bfe246.chunk.js.map",
-    "runtime-main.js": "/voyager/static/js/runtime-main.a1d32400.js",
-    "runtime-main.js.map": "/voyager/static/js/runtime-main.a1d32400.js.map",
-    "static/css/2.150d169a.chunk.css": "/voyager/static/css/2.150d169a.chunk.css",
-    "static/js/2.42dc1c56.chunk.js": "/voyager/static/js/2.42dc1c56.chunk.js",
-    "static/js/2.42dc1c56.chunk.js.map": "/voyager/static/js/2.42dc1c56.chunk.js.map",
-    "static/js/3.6c3f3725.chunk.js": "/voyager/static/js/3.6c3f3725.chunk.js",
-    "static/js/3.6c3f3725.chunk.js.map": "/voyager/static/js/3.6c3f3725.chunk.js.map",
+    "main.css": "/voyager/static/css/main.9594b43b.chunk.css",
+    "main.js": "/voyager/static/js/main.ddffec1a.chunk.js",
+    "main.js.map": "/voyager/static/js/main.ddffec1a.chunk.js.map",
+    "runtime-main.js": "/voyager/static/js/runtime-main.a5e1aa0d.js",
+    "runtime-main.js.map": "/voyager/static/js/runtime-main.a5e1aa0d.js.map",
+    "static/js/2.34d56178.chunk.js": "/voyager/static/js/2.34d56178.chunk.js",
+    "static/js/2.34d56178.chunk.js.map": "/voyager/static/js/2.34d56178.chunk.js.map",
+    "static/js/3.392b8f76.chunk.js": "/voyager/static/js/3.392b8f76.chunk.js",
+    "static/js/3.392b8f76.chunk.js.map": "/voyager/static/js/3.392b8f76.chunk.js.map",
     "index.html": "/voyager/index.html",
-    "static/css/2.150d169a.chunk.css.map": "/voyager/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.6e7c493e.chunk.css.map": "/voyager/static/css/main.6e7c493e.chunk.css.map",
-    "static/js/2.42dc1c56.chunk.js.LICENSE.txt": "/voyager/static/js/2.42dc1c56.chunk.js.LICENSE.txt",
+    "static/css/main.9594b43b.chunk.css.map": "/voyager/static/css/main.9594b43b.chunk.css.map",
+    "static/js/2.34d56178.chunk.js.LICENSE.txt": "/voyager/static/js/2.34d56178.chunk.js.LICENSE.txt",
     "static/media/add.8950a2d2.svg": "/voyager/static/media/add.8950a2d2.svg",
     "static/media/aeroplane-gray.5e6bd7aa.svg": "/voyager/static/media/aeroplane-gray.5e6bd7aa.svg",
-    "static/media/download.b58b73d4.svg": "/voyager/static/media/download.b58b73d4.svg",
+    "static/media/close.a94db416.svg": "/voyager/static/media/close.a94db416.svg",
+    "static/media/hamburger.5d132b54.svg": "/voyager/static/media/hamburger.5d132b54.svg",
     "static/media/house.1618b123.svg": "/voyager/static/media/house.1618b123.svg",
     "static/media/logo-full-aqua.c7bfa860.svg": "/voyager/static/media/logo-full-aqua.c7bfa860.svg",
     "static/media/logo-full-sunset.c614165c.svg": "/voyager/static/media/logo-full-sunset.c614165c.svg",
@@ -25,10 +24,9 @@
     "static/media/settings.371a91de.svg": "/voyager/static/media/settings.371a91de.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a1d32400.js",
-    "static/css/2.150d169a.chunk.css",
-    "static/js/2.42dc1c56.chunk.js",
-    "static/css/main.6e7c493e.chunk.css",
-    "static/js/main.68bfe246.chunk.js"
+    "static/js/runtime-main.a5e1aa0d.js",
+    "static/js/2.34d56178.chunk.js",
+    "static/css/main.9594b43b.chunk.css",
+    "static/js/main.ddffec1a.chunk.js"
   ]
 }

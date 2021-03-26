@@ -29,7 +29,7 @@ The web app has no data transfer involved whatsoever, except for loading the map
 
 # Credits
 - Anushka Ramteke, for the endless travel talks that inspired me to make this, and for the color schemes!
-- [Akash Joshi](https://github.com/akash-joshi), a former colleague and a good friend. His React articles have been a lot of help.
+- [Akash Joshi](https://github.com/akash-joshi), for his React articles which have been a lot of help.
 - The folks at [Webloom Inc.](https://webloominc.com), my previous employers, for pushing me into React.js.  
 
 # License

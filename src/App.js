@@ -12,7 +12,7 @@ import { getItinerary, getTheme, getHome } from './utils/StorageManager';
 import { isMobile } from './utils/Utils';
 import { getThemeById } from './theme/Theme';
 
-import { ChakraProvider, Drawer, Grid, GridItem, DrawerOverlay } from "@chakra-ui/react"
+import { ChakraProvider, Drawer, Grid, GridItem, DrawerOverlay, Box } from "@chakra-ui/react"
 import AddDestinationModal from './components/modals/AddDestination';
 import SettingsModal from './components/modals/Settings';
 
@@ -29,7 +29,7 @@ const App = () => {
   const handleDestinationAdded = () => {
     setShowAddModal(false);
   }
-  
+
   const handleSettingsClose = () => {
     setShowSettingsModal(false);
   }
@@ -57,7 +57,9 @@ const App = () => {
                 drawerOpen={setOpenDrawer}
                 showAddModal={setShowAddModal}
                 showSettingsModal={setShowSettingsModal} />
-              <p className="small-text all-caps absolute-bottom z-top"><small>Paths do not depict actual flight routes.</small></p>
+              <Box p={4} className="absolute-bottom z-top">
+                <p className="small-text all-caps "><small>Paths do not depict actual flight routes.</small></p>
+              </Box>
             </div>
           </GridItem>
           <GridItem colSpan={{ base: 0, sm: 0, md: 4, lg: 3 }} h="100vh">

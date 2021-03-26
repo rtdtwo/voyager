@@ -1,7 +1,7 @@
 # Voyager
 A travel itinerary visualizer that plots your destinations on a map.
 
-# Try it out:
+# Try it out
 Head [here](https://tatirajurishabh.github.io/voyager/) for a working demo.
 
 # Libraries in use:

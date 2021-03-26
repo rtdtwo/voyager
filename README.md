@@ -3,7 +3,7 @@ A travel itinerary visualizer that plots your destinations on a map.
 
 # Libraries in use:
 - [React.js](https://github.com/facebook/react) using which Voyager is built.
-- [React Leaflet](https://github.com/PaulLeCam/react-leaflet) which made the powerful [Leaflet.js](https://github.com/Leaflet/Leaflet) mapping library easily accessible in react.
+- [React Leaflet](https://github.com/PaulLeCam/react-leaflet) which made the powerful [Leaflet.js](https://github.com/Leaflet/Leaflet) mapping library easily accessible in React.
 - [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap) which made UI building hassle-free.
 - [React Bootstrap Typeahead](https://github.com/ericgio/react-bootstrap-typeahead) for easy implementation of search bars.
 - [Turfjs Bezier Spline](https://github.com/Turfjs/turf) which makes drawing airplane paths easy.

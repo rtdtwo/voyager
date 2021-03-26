@@ -16,6 +16,7 @@ Head [here](https://tatirajurishabh.github.io/voyager/) for a working demo.
 The web app has no data transfer involved whatsoever, except for loading the map data when you're moving and zooming around. This is achieved by storing data in the browser's local storage. Hence, clearing browser data will result in all data to be permanently erased. So, tread cautiously. A backup and restore feature will be implemented soon.
 
 # To-do
+- [ ] Mobile interface
 - [ ] Change home city
 - [ ] Export and import data
 - [ ] Destination notekeeping

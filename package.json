@@ -1,7 +1,8 @@
 {
   "homepage": "http://tatirajurishabh.github.io/voyager",
   "name": "voyager",
-  "version": "0.1.0",
+  "license": "MIT",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.4.1",

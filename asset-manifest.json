@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/voyager/static/css/main.9594b43b.chunk.css",
+    "main.css": "/voyager/static/css/main.1fdf74ac.chunk.css",
     "main.js": "/voyager/static/js/main.ddffec1a.chunk.js",
     "main.js.map": "/voyager/static/js/main.ddffec1a.chunk.js.map",
     "runtime-main.js": "/voyager/static/js/runtime-main.a5e1aa0d.js",
@@ -10,7 +10,7 @@
     "static/js/3.392b8f76.chunk.js": "/voyager/static/js/3.392b8f76.chunk.js",
     "static/js/3.392b8f76.chunk.js.map": "/voyager/static/js/3.392b8f76.chunk.js.map",
     "index.html": "/voyager/index.html",
-    "static/css/main.9594b43b.chunk.css.map": "/voyager/static/css/main.9594b43b.chunk.css.map",
+    "static/css/main.1fdf74ac.chunk.css.map": "/voyager/static/css/main.1fdf74ac.chunk.css.map",
     "static/js/2.34d56178.chunk.js.LICENSE.txt": "/voyager/static/js/2.34d56178.chunk.js.LICENSE.txt",
     "static/media/add.8950a2d2.svg": "/voyager/static/media/add.8950a2d2.svg",
     "static/media/aeroplane-gray.5e6bd7aa.svg": "/voyager/static/media/aeroplane-gray.5e6bd7aa.svg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.a5e1aa0d.js",
     "static/js/2.34d56178.chunk.js",
-    "static/css/main.9594b43b.chunk.css",
+    "static/css/main.1fdf74ac.chunk.css",
     "static/js/main.ddffec1a.chunk.js"
   ]
 }

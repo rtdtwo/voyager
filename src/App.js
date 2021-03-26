@@ -9,7 +9,7 @@ import Toolbar from './components/Toolbar';
 import GetStartedModal from './components/modals/GetStarted';
 
 import { getItinerary, getTheme, getHome } from './utils/StorageManager';
-import { isMobile } from './utils/Utils';
+import { isMobile, availableHeight } from './utils/Utils';
 import { getThemeById } from './theme/Theme';
 
 import { ChakraProvider, Drawer, Grid, GridItem, DrawerOverlay, Box } from "@chakra-ui/react"
@@ -50,7 +50,7 @@ const App = () => {
           gap={0}
         >
           <GridItem colSpan={{ base: 12, sm: 12, md: 8, lg: 9 }} h="100vh">
-            <div className="fit-viewport-height relative-container">
+            <div className="fit-container relative-container">
               <Map className="fit-container absolute-top z-base" />
               <Toolbar
                 className="fit-width absolute-top z-top fade-top"

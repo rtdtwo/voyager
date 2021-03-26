@@ -34,4 +34,8 @@ export const getMidpoint = (latlng1, latlng2) => {
     return [midpointY, midpointX];
 }
 
-export const isMobile = window.screen.availWidth < 768
+export const availableWidth = window.screen.availWidth;
+
+export const availableHeight = window.screen.availHeight;
+
+export const isMobile = availableWidth < 768;

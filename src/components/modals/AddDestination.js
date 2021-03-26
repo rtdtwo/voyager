@@ -1,61 +1,91 @@
 import React, { useState } from 'react';
 import { useStore } from 'react-context-hook';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import { Typeahead } from 'react-bootstrap-typeahead';
-import { addToItinerary } from '../../utils/StorageManager.js';
+import { addToItinerary, getItinerary } from '../../utils/StorageManager.js';
+
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalCloseButton,
+    ModalBody,
+    Input,
+    VStack,
+    StackDivider,
+    Box,
+    Button
+} from "@chakra-ui/react"
 
 import Destinations from '../../data/airport_db.json';
 
 const AddDestinationModal = (props) => {
     const [theme] = useStore('theme');
-
-    const [selectedDestination, setSelectedDestination] = useState([]);
-
-    const filterDestinations = (option, props) => (
-        option.city.toLowerCase().indexOf(props.text.toLowerCase()) !== -1 ||
-        option.country.toLowerCase().indexOf(props.text.toLowerCase()) !== -1
-    );
+    const [itinerary, setItinerary] = useStore('itinerary');
+    const [selectedPlace, setSelectedPlace] = useState(null);
+    const [searchOptions, setSearchOptions] = useState([]);
 
     const handleSubmit = () => {
-        if (selectedDestination.length > 0) {
-            addToItinerary(selectedDestination[0]);
-            props.handleClose(true);
+        if (selectedPlace !== null) {
+            addToItinerary(selectedPlace);
+            setItinerary(getItinerary());
+            setSearchOptions([]);
+            setSelectedPlace(null);
+            props.handleClose();
+        }
+    }
+
+    const handleOptionSelect = (item) => {
+        setSelectedPlace(item);
+        setSearchOptions([])
+    }
+
+    const onSearchChange = (event) => {
+        setSelectedPlace(null);
+        const searchTerm = event.target.value.toLowerCase();
+        if (searchTerm.length >= 3) {
+            setSearchOptions(Destinations.filter(item => {
+                return item.city.toLowerCase().includes(searchTerm) || item.country.toLowerCase().includes(searchTerm)
+            }))
+        } else {
+            setSearchOptions([]);
         }
     }
 
     return (
-        <Modal centered show={props.show} onHide={() => props.handleClose()}>
-            <Modal.Header closeButton>
-                <Modal.Title className="headline">ADD A DESTINATION</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <Form.Group>
-                    <Form.Label className="regular-text"><b>WHERE?</b></Form.Label>
-                    <Typeahead
-                        filterBy={filterDestinations}
-                        labelKey="city"
-                        onChange={setSelectedDestination}
-                        id="add-destination"
-                        className="all-caps"
-                        options={Destinations}
-                        placeholder="Type a destination"
-                        renderMenuItemChildren={(option) => (
-                            <div>
-                                <p className="p-0 m-0 medium-text"><b>{option.city.toUpperCase()}</b></p>
-                                <p className="p-0 m-0 small-text">{option.country.toUpperCase()}</p>
-                            </div>
-                        )}
-                    />
-                    <Form.Text className="text-muted">Search from {Destinations.length} destinations!</Form.Text>
-                </Form.Group>
-            </Modal.Body>
-            <Modal.Footer>
-                <Button className={theme.button} variant="primary" onClick={() => handleSubmit()}>
-                    Add
-                    </Button>
-            </Modal.Footer>
+        <Modal isOpen={props.show} onClose={() => props.handleClose()}>
+            <ModalOverlay />
+            <ModalContent>
+                <ModalHeader className="subhead-text all-caps">Add a Destination</ModalHeader>
+                <ModalCloseButton />
+                <ModalBody>
+                    <Input
+                        key={selectedPlace?.icao}
+                        defaultValue={selectedPlace ? (selectedPlace.city + ', ' + selectedPlace.country) : ''}
+                        placeholder="Type a city"
+                        type="text"
+                        className="text-align-center"
+                        mt={3}
+                        onChange={onSearchChange.bind(this)} />
+                    {
+                        searchOptions.length > 0 ?
+                            <VStack
+                                divider={<StackDivider borderColor="gray.200" />}
+                                spacing={0}
+                                align="stretch"
+                                className="vertical-scroll search-options text-align-center">
+
+                                {searchOptions.map(item => {
+                                    return <Box mt={2} mb={2} onClick={() => handleOptionSelect(item)}>
+                                        <p className="regular-text all-caps"><b>{item.city}</b></p>
+                                        <p className="small-text all-caps">{item.country}</p>
+                                    </Box>
+                                })}
+
+                            </VStack> : null
+                    }
+                </ModalBody>
+                <Button className={theme.button} onClick={() => handleSubmit()} m={5}>Submit</Button>
+            </ModalContent>
         </Modal>
     )
 }

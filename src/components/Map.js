@@ -28,7 +28,7 @@ const Map = (props) => {
         if (home !== null && home !== undefined) {
             return <Marker position={[home.latitude, home.longitude]} icon={homeMarkerIcon}>
                 <Popup>
-                    <p className="p-0 m-0 regular-text poppins"><b>HOME</b></p>
+                    <p className="regular-text poppins"><b>HOME</b></p>
                 </Popup>
             </Marker>
         }
@@ -48,8 +48,8 @@ const Map = (props) => {
             return <Marker position={[lat, lon]} key={item.icao} icon={markerIcon}>
                 <Popup>
                     <div>
-                        <p className="p-0 m-0 regular-text poppins"><b>{item.city.toUpperCase()}</b></p>
-                        <p className="p-0 m-0 small-text poppins">{item.country.toUpperCase()}</p>
+                        <p className="regular-text poppins"><b>{item.city.toUpperCase()}</b></p>
+                        <p className="small-text poppins">{item.country.toUpperCase()}</p>
                     </div>
                 </Popup>
             </Marker>

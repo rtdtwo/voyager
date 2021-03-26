@@ -88,17 +88,17 @@ body {
 }
 
 .subhead-text {
-  font-size: 18px;
-  color: #333333;
-  font-weight: 700;
+  font-size: 18px !important;
+  color: #333333 !important;
+  font-weight: 700 !important;
 }
 
 .z-top {
-  z-index: 10;
+  z-index: 10 !important;
 }
 
 .z-base {
-  z-index: 0;
+  z-index: 0 !important;
 }
 
 .fade-top {
@@ -122,13 +122,14 @@ body {
 }
 
 .button-maldives {
-  border: none;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 40px;
-  background: rgb(52,152,219);
-  background: linear-gradient(90deg, rgba(52,152,219,1) 0%, rgba(46,204,113,1) 100%);
+  border: none !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  border-radius: 40px !important;
+  color: white;
+  background: rgb(52,152,219) !important;
+  background: linear-gradient(90deg, rgba(52,152,219,1) 0%, rgba(46,204,113,1) 100%) !important;
 }
 
 .button-california {
@@ -177,4 +178,25 @@ body {
 
 .vertical-scroll {
   overflow-y: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.center-using-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-options {
+  background-color: #fbfbfb;
+  border: 1px solid #efefef;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  max-height: 200px;
+}
+
+.text-color-white{
+  color: white;
 }

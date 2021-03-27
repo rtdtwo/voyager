@@ -27,9 +27,19 @@ The web app has no data transfer involved whatsoever, except for loading the map
 ![](https://i.postimg.cc/yWC84csr/voyager3.png)
 
 # Credits
-- Anushka Ramteke, for the endless travel talks that inspired me to make this, and for the color schemes!
-- [Akash Joshi](https://github.com/akash-joshi), for his React articles which have been a lot of help.
-- The folks at [Webloom Inc.](https://webloominc.com), my previous employers, for pushing me into React.js.  
+- ***Anushka Ramteke***, for the endless travel talks and our collective love to travel that inspired me to make this! She's also the person to credit for the color schemes used here.
+- ***[Akash Joshi](https://github.com/akash-joshi)***, for inardavently  introducing me to React. His React articles have been a lot of help too!
+- ***My beloved late father***, for gifting me an atlas when I was 6 years old, something that led me to develop an obsession towards geography and cartography.
+
+# Homage
+Although this tool is in no way related to space exploration, the tool is named after *Voyager 1*, the cosmic traveler.
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Voyager_spacecraft_model.png/320px-Voyager_spacecraft_model.png)
+
+*Voyager 1* is the farthest man-made object from Earth. The spacecraft, now more than *22 billion km (14 billion miles)* away from us, is slated to wander the vast darkness of space for eternity. 
+
+By 2025, its radioisotope thermoelectric generators (RTGs, a type of nuclear power generator) will no longer supply enough electric power for onboard instruments, and it will disappear from our sight forever. However, it carries a gold-plated audio-visual disc, should the spacecraft ever be found by intelligent life forms from other planetary systems. 
+
+Quite indeed, it is boldly going where no one has ever gone before!🖖
 
 # License
 The MIT License (MIT)

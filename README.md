@@ -36,7 +36,7 @@ The web app has no data transfer involved whatsoever, except for loading the map
 Although this tool is nothing related to space exploration, the tool is named after *Voyager 1*, the cosmic traveler.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Voyager_spacecraft_model.png/320px-Voyager_spacecraft_model.png)
 
-*Voyager 1* is the farthest man-made object from Earth. The spacecraft, now more than *22 billion km (14 billion miles)* away from Earth, is slated to wander the vast darkness of space for an eternity. Quite indeed, it is boldly going where no one has ever gone before!
+*Voyager 1* is the farthest man-made object from Earth. The spacecraft, now more than *22 billion km (14 billion miles)* away from us, is slated to wander the vast darkness of space for eternity. By 2025, its radioisotope thermoelectric generators (RTGs, a type of nuclear power generator) will no longer supply enough electric power for onboard instruments, and will hence disappear from our sight. However, it carries a gold-plated audio-visual disc, should the spacecraft ever be found by intelligent life forms from other planetary systems. Quite indeed, it is boldly going where no one has ever gone before!🖖
 
 # License
 The MIT License (MIT)

@@ -27,9 +27,10 @@ The web app has no data transfer involved whatsoever, except for loading the map
 ![](https://i.postimg.cc/yWC84csr/voyager3.png)
 
 # Credits
-- Anushka Ramteke, for the endless travel talks that inspired me to make this, and for the color schemes!
-- [Akash Joshi](https://github.com/akash-joshi), for his React articles which have been a lot of help.
-- The folks at [Webloom Inc.](https://webloominc.com), my previous employers, for pushing me into React.js.  
+- Anushka Ramteke, the *optimis optimus*, for the endless travel talks and our collective love to travel that inspired me to make this! She's also the person to credit for the color schemes used here.
+- [Akash Joshi](https://github.com/akash-joshi), for inardavently  introducing me to React. His React articles have been a lot of help too!
+- My beloved late father, for buying me an atlas when I was 6 years old, something that led me develop an obsession towards geography and cartography.
+- The folks at [Webloom Inc](https://webloominc.com), my previous employer, for pushing me into React and React Native.
 
 # License
 The MIT License (MIT)

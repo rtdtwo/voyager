@@ -224,6 +224,10 @@ body {
   color: white;
 }
 
+.text-color-transparent {
+  color: transparent;
+}
+
 .bg-white {
   background-color: white;
 }

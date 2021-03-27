@@ -9,8 +9,20 @@ import {
     ModalCloseButton,
     Image,
     ModalBody,
-    Box
+    Box,
+    Table,
+    Tbody,
+    Td,
+    Tr,
+    Thead,
+    Th
 } from "@chakra-ui/react"
+
+import AddIcon from '../../assets/icons/add.svg';
+import HamburgerIcon from '../../assets/icons/hamburger.svg';
+import MaximizeIcon from '../../assets/icons/maximize.svg';
+import DownloadIcon from '../../assets/icons/download.svg';
+import SettingsIcon from '../../assets/icons/settings.svg';
 
 const AboutModal = (props) => {
     const [theme] = useStore('theme');
@@ -22,10 +34,62 @@ const AboutModal = (props) => {
                 <ModalHeader className="subhead-text all-caps">About</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody className="vertical-scroll">
-                    <Image src={theme.logo} width="180px" alt="" mb={4} className="center-using-margin" />
+                    <Image src={theme.logo} w="180px" alt="" mb={4} className="center-using-margin" />
                     <p className="regular-text text-align-center">Made with <span title="All you need is love! - The Beatles">❤️</span> by <a href="https://rishabh.blog" target="_blank" rel="noreferrer"><b><u>Rishabh Tatiraju</u></b></a></p>
                     <Box mt={6} mb={6}>
                         <p className="regular-text text-align-justify">Voyager is a travel itinerary visualizer. Simply set your home city and start adding destinations to see them on a beautifully crafted map - a way to remember all your travels!</p>
+                    </Box>
+                    <p className="regular-text text-align-center all-caps"><b>Usage Guide</b></p>
+                    <Box mb={6}>
+                        <Table size="sm" variant="unstyled">
+                            <Thead>
+                                <Tr>
+                                    <Th className="text-color-transparent">Button</Th>
+                                </Tr>
+                            </Thead>
+                            <Tbody>
+                                <Tr>
+                                    <Td>
+                                        <Image src={AddIcon} w="16px" alt="" />
+                                    </Td>
+                                    <Td>
+                                        <p className="regular-text">Add a destination to your itinerary</p>
+                                    </Td>
+                                </Tr>
+                                <Tr>
+                                    <Td>
+                                        <Image src={HamburgerIcon} w="16px" />
+                                    </Td>
+                                    <Td>
+                                        <p className="regular-text">(Mobile Only) Open the itinerary</p>
+                                    </Td>
+                                </Tr>
+                                <Tr>
+                                    <Td>
+                                        <Image src={MaximizeIcon} w="16px" />
+                                    </Td>
+                                    <Td>
+                                        <p className="regular-text">Reset the map view to the way it was initially. This does not clear your itinerary, only resets the zoom and map position.</p>
+                                    </Td>
+                                </Tr>
+                                <Tr>
+                                    <Td>
+                                        <Image src={DownloadIcon} w="16px" />
+                                    </Td>
+                                    <Td>
+                                        <p className="regular-text">Download the map as an image.</p>
+                                    </Td>
+                                </Tr>
+                                <Tr>
+                                    <Td>
+                                        <Image src={SettingsIcon} w="16px" />
+                                    </Td>
+                                    <Td>
+                                        <p className="regular-text">Open the app's settings.</p>
+                                    </Td>
+                                </Tr>
+                            </Tbody>
+                        </Table>
                     </Box>
                     <p className="regular-text text-align-center all-caps"><b>Credits</b></p>
                     <Box mt={2} mb={6}>

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useStore } from 'react-context-hook';
 
-import { MapContainer, TileLayer, Marker, Popup, GeoJSON, Tooltip } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet';
 import Leaflet from 'leaflet';
 
 import * as helpers from '@turf/helpers';
@@ -16,6 +16,7 @@ const Map = (props) => {
     const [theme] = useStore('theme');
     const [home] = useStore('home');
     const [selectedDestination] = useStore('selectedDestination');
+    const [resetMap, setResetMap] = useStore('resetMap');
 
     const homeMarkerIcon = new Leaflet.Icon({
         iconUrl: theme.homeMarker,
@@ -86,9 +87,25 @@ const Map = (props) => {
     const northEast = Leaflet.latLng(90, 180);
     const bounds = Leaflet.latLngBounds(southWest, northEast);
 
-    const centerPoint = selectedDestination !== null ? [selectedDestination.latitude, selectedDestination.longitude] : [0, 0]
-    const zoom = selectedDestination !== null ? 4 : 2;
+    const centerPoint = selectedDestination ? [selectedDestination.latitude, selectedDestination.longitude] : [0, 0]
+    const zoom = selectedDestination ? 4 : 2;
     leafletMap?.setView(centerPoint, zoom);
+
+    useEffect(() => {
+        if (selectedDestination) {
+            leafletMap?.setView([selectedDestination.latitude, selectedDestination.longitude], 4)
+        } else {
+            setResetMap(true);
+        }
+    }, [selectedDestination])
+
+    // Called when reset map is called
+    useEffect(() => {
+        if (resetMap) {
+            leafletMap?.setView([0, 0], 2);
+            setResetMap(false);
+        }
+    }, [resetMap])
 
     return (
         <MapContainer

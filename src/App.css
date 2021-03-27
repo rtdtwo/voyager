@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .App {
@@ -144,22 +144,25 @@ body {
 }
 
 .button-california {
-  border: none;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 40px;background: rgb(162,124,145);
-  background: linear-gradient(125deg, rgba(162,124,145,1) 0%, rgba(255,131,133,1) 33%, rgba(253,166,1,1) 66%, rgba(254,198,2,1) 100%);
+  border: none !important;
+  color: white;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  border-radius: 40px !important;
+  background: rgb(162,124,145) !important;
+  background: linear-gradient(125deg, rgba(162,124,145,1) 0%, rgba(255,131,133,1) 33%, rgba(253,166,1,1) 66%, rgba(254,198,2,1) 100%) !important;
 }
 
-.button-grey {
-  border: none;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 40px;
-  background: rgb(170,170,170);
-  background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(137,137,137,1) 100%);
+.button-gray {
+  border: none !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  border-radius: 40px !important;
+  color: white;
+  background: rgb(170,170,170) !important;
+  background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(137,137,137,1) 100%) !important;
 }
 
 .gradient-maldives {

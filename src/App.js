@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { withStore } from 'react-context-hook';
 
 import './App.css';
@@ -18,8 +18,7 @@ import SettingsModal from './components/modals/Settings';
 import AboutModal from './components/modals/About';
 
 import DomToImage from 'dom-to-image';
-import DownloadIcon from './assets/icons/download.svg'
-
+import DownloadModal from './components/modals/DownloadConfirmation';
 
 const App = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -27,6 +26,7 @@ const App = () => {
   const [showAddModal, setShowAddModal] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [showAboutModal, setShowAboutModal] = useState(false);
+  const [showDownloadModal, setShowDownloadModal] = useState(false);
 
   const handleGetStartedClose = () => {
     setShowGetStarted(false);
@@ -44,16 +44,14 @@ const App = () => {
     setShowAboutModal(false);
   }
 
+  const handleDownloadClose = () => {
+    setShowDownloadModal(false);
+  }
 
   const printMap = () => {
-    // DomToImage.toBlob(document.getElementById("map"), {})
-    //   .then(function (blob) {
-    //     FileSaver.saveAs(blob, "map.png");
-    //   });
-
+    setShowDownloadModal(false);
     DomToImage.toJpeg(document.getElementById('map'), { quality: 1, dpi: 300 })
       .then(function (dataUrl) {
-        console.log(dataUrl);
         const link = document.createElement('a');
         link.download = 'map.jpg';
         link.href = dataUrl;
@@ -72,6 +70,8 @@ const App = () => {
 
         <AboutModal show={showAboutModal} handleClose={handleAboutClose} />
 
+        <DownloadModal show={showDownloadModal} handleClose={handleDownloadClose} print={printMap} />
+
         <Grid
           h="100vh"
           w="100vw"
@@ -87,13 +87,11 @@ const App = () => {
                 drawerOpen={setOpenDrawer}
                 showAddModal={setShowAddModal}
                 showAboutModal={setShowAboutModal}
+                showDownloadModal={setShowDownloadModal}
                 showSettingsModal={setShowSettingsModal} />
               <Box p={4} className="absolute-bottom z-top">
                 <p className="small-text all-caps "><small>Paths do not depict actual flight routes.</small></p>
               </Box>
-              {!isMobile ? <Box m={4} mb={6} className="absolute-bottom absolute-right z-top">
-                <Image src={DownloadIcon} alt="" onClick={() => printMap()} width="20px" />
-              </Box> : null}
             </div>
           </GridItem>
           <GridItem colSpan={{ base: 0, sm: 0, md: 4, lg: 3 }} h="100vh">
@@ -121,6 +119,8 @@ const globalState = {
   theme: getThemeById(getTheme()),
   itinerary: getItinerary(),
   home: getHome(),
-  selectedDestination: null
+  selectedDestination: null,
+  resetMap: false
 };
+
 export default withStore(App, globalState);

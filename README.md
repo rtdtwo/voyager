@@ -16,6 +16,7 @@ The web app has no data transfer involved whatsoever, except for loading the map
 
 # To-do
 - [x] Mobile interface
+- [x] Download Map
 - [ ] Change home city
 - [ ] Export and import data
 - [ ] Destination notekeeping

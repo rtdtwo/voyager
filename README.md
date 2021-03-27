@@ -32,6 +32,12 @@ The web app has no data transfer involved whatsoever, except for loading the map
 - My beloved late father, for buying me an atlas when I was 6 years old, something that led me develop an obsession towards geography and cartography.
 - The folks at [Webloom Inc](https://webloominc.com), my previous employer, for pushing me into React and React Native.
 
+# Homage
+Although this tool is nothing related to space exploration, the tool is named after *Voyager 1*, the cosmic traveler.
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Voyager_spacecraft_model.png/320px-Voyager_spacecraft_model.png)
+
+*Voyager 1* is the farthest man-made object from Earth. The spacecraft, now more than *22 billion km (14 billion miles)* away from Earth, is slated to wander the vast darkness of space for an eternity. Quite indeed, it is boldly going where no one has ever gone before!
+
 # License
 The MIT License (MIT)
   

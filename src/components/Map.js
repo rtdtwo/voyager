@@ -47,10 +47,8 @@ const Map = (props) => {
             const lon = item.longitude;
             return <Marker position={[lat, lon]} key={item.icao} icon={markerIcon}>
                 <Popup>
-                    <div>
-                        <p className="regular-text poppins"><b>{item.city.toUpperCase()}</b></p>
-                        <p className="small-text poppins">{item.country.toUpperCase()}</p>
-                    </div>
+                    <p className="regular-text poppins all-caps no-padding no-margin"><b>{item.city}</b></p>
+                    <p className="small-text poppins all-caps no-padding no-margin">{item.country}</p>
                 </Popup>
             </Marker>
         })

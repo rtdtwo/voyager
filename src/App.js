@@ -9,18 +9,20 @@ import Toolbar from './components/Toolbar';
 import GetStartedModal from './components/modals/GetStarted';
 
 import { getItinerary, getTheme, getHome } from './utils/StorageManager';
-import { isMobile, availableHeight } from './utils/Utils';
+import { isMobile } from './utils/Utils';
 import { getThemeById } from './theme/Theme';
 
 import { ChakraProvider, Drawer, Grid, GridItem, DrawerOverlay, Box } from "@chakra-ui/react"
 import AddDestinationModal from './components/modals/AddDestination';
 import SettingsModal from './components/modals/Settings';
+import AboutModal from './components/modals/About';
 
 const App = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [showGetStarted, setShowGetStarted] = useState(getHome() === null || getHome() === undefined);
   const [showAddModal, setShowAddModal] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const [showAboutModal, setShowAboutModal] = useState(false);
 
   const handleGetStartedClose = () => {
     setShowGetStarted(false);
@@ -34,6 +36,10 @@ const App = () => {
     setShowSettingsModal(false);
   }
 
+  const handleAboutClose = () => {
+    setShowAboutModal(false);
+  }
+
   return (
     <ChakraProvider>
       <div className="App">
@@ -42,6 +48,8 @@ const App = () => {
         <AddDestinationModal show={showAddModal} handleClose={handleDestinationAdded} />
 
         <SettingsModal show={showSettingsModal} handleClose={handleSettingsClose} />
+
+        <AboutModal show={showAboutModal} handleClose={handleAboutClose} />
 
         <Grid
           h="100vh"
@@ -56,6 +64,7 @@ const App = () => {
                 className="fit-width absolute-top z-top fade-top"
                 drawerOpen={setOpenDrawer}
                 showAddModal={setShowAddModal}
+                showAboutModal={setShowAboutModal}
                 showSettingsModal={setShowSettingsModal} />
               <Box p={4} className="absolute-bottom z-top">
                 <p className="small-text all-caps "><small>Paths do not depict actual flight routes.</small></p>

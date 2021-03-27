@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { withStore } from 'react-context-hook';
 
 import './App.css';
@@ -12,10 +12,14 @@ import { getItinerary, getTheme, getHome } from './utils/StorageManager';
 import { isMobile } from './utils/Utils';
 import { getThemeById } from './theme/Theme';
 
-import { ChakraProvider, Drawer, Grid, GridItem, DrawerOverlay, Box } from "@chakra-ui/react"
+import { ChakraProvider, Drawer, Grid, GridItem, DrawerOverlay, Box, Button, Image } from "@chakra-ui/react"
 import AddDestinationModal from './components/modals/AddDestination';
 import SettingsModal from './components/modals/Settings';
 import AboutModal from './components/modals/About';
+
+import DomToImage from 'dom-to-image';
+import DownloadIcon from './assets/icons/download.svg'
+
 
 const App = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -40,6 +44,23 @@ const App = () => {
     setShowAboutModal(false);
   }
 
+
+  const printMap = () => {
+    // DomToImage.toBlob(document.getElementById("map"), {})
+    //   .then(function (blob) {
+    //     FileSaver.saveAs(blob, "map.png");
+    //   });
+
+    DomToImage.toJpeg(document.getElementById('map'), { quality: 1, dpi: 300 })
+      .then(function (dataUrl) {
+        console.log(dataUrl);
+        const link = document.createElement('a');
+        link.download = 'map.jpg';
+        link.href = dataUrl;
+        link.click();
+      });
+  }
+
   return (
     <ChakraProvider>
       <div className="App">
@@ -55,11 +76,12 @@ const App = () => {
           h="100vh"
           w="100vw"
           templateColumns="repeat(12, 1fr)"
-          gap={0}
-        >
+          gap={0}>
           <GridItem colSpan={{ base: 12, sm: 12, md: 8, lg: 9 }} h="100vh">
             <div className="fit-container relative-container">
-              <Map className="fit-container absolute-top z-base" />
+              <div id="map" className="fit-container absolute-top z-base">
+                <Map className="fit-container" />
+              </div>
               <Toolbar
                 className="fit-width absolute-top z-top fade-top"
                 drawerOpen={setOpenDrawer}
@@ -69,6 +91,9 @@ const App = () => {
               <Box p={4} className="absolute-bottom z-top">
                 <p className="small-text all-caps "><small>Paths do not depict actual flight routes.</small></p>
               </Box>
+              {!isMobile ? <Box m={4} mb={6} className="absolute-bottom absolute-right z-top">
+                <Image src={DownloadIcon} alt="" onClick={() => printMap()} width="20px" />
+              </Box> : null}
             </div>
           </GridItem>
           <GridItem colSpan={{ base: 0, sm: 0, md: 4, lg: 3 }} h="100vh">

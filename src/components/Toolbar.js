@@ -14,6 +14,7 @@ import { isMobile } from '../utils/Utils';
 
 const Toolbar = (props) => {
     const [theme] = useStore('theme');
+    const [callPrint, setCallPrint] = useStore('callPrint');
 
     const getMenuItems = () => {
         const floatDirection = isMobile ? "float-top" : "float-right";

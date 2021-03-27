@@ -1,8 +1,8 @@
 import React from 'react';
 import { useStore } from 'react-context-hook';
 
-import { MapContainer, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet'
-import Leaflet from 'leaflet'
+import { MapContainer, TileLayer, Marker, Popup, GeoJSON, Tooltip } from 'react-leaflet';
+import Leaflet from 'leaflet';
 
 import * as helpers from '@turf/helpers';
 import { default as bezierSpline } from '@turf/bezier-spline';
@@ -95,7 +95,9 @@ const Map = (props) => {
             className={props.className}
             center={[0, 0]}
             maxBounds={bounds}
-            whenCreated={map => { leafletMap = map }}
+            whenCreated={map => {
+                leafletMap = map
+            }}
             zoom={2}
             minZoom={2}
             zoomControl={false}>

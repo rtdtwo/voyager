@@ -36,13 +36,16 @@ body {
 .absolute-top {
   position: absolute;
   top: 0;
-  left: 0;
 }
 
 .absolute-bottom {
   position: absolute;
   bottom: 0;
-  left: 0;
+}
+
+.absolute-right {
+  position: absolute;
+  right: 0;
 }
 
 .no-spacing {

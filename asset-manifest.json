@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/voyager/static/css/main.503eef04.chunk.css",
-    "main.js": "/voyager/static/js/main.9efc7d1f.chunk.js",
-    "main.js.map": "/voyager/static/js/main.9efc7d1f.chunk.js.map",
-    "runtime-main.js": "/voyager/static/js/runtime-main.0ac6e033.js",
-    "runtime-main.js.map": "/voyager/static/js/runtime-main.0ac6e033.js.map",
-    "static/js/2.2671bbc6.chunk.js": "/voyager/static/js/2.2671bbc6.chunk.js",
-    "static/js/2.2671bbc6.chunk.js.map": "/voyager/static/js/2.2671bbc6.chunk.js.map",
-    "static/js/3.6c1995e1.chunk.js": "/voyager/static/js/3.6c1995e1.chunk.js",
-    "static/js/3.6c1995e1.chunk.js.map": "/voyager/static/js/3.6c1995e1.chunk.js.map",
+    "main.css": "/voyager/static/css/main.8e905a10.chunk.css",
+    "main.js": "/voyager/static/js/main.70821edf.chunk.js",
+    "main.js.map": "/voyager/static/js/main.70821edf.chunk.js.map",
+    "runtime-main.js": "/voyager/static/js/runtime-main.421bc964.js",
+    "runtime-main.js.map": "/voyager/static/js/runtime-main.421bc964.js.map",
+    "static/js/2.24014fca.chunk.js": "/voyager/static/js/2.24014fca.chunk.js",
+    "static/js/2.24014fca.chunk.js.map": "/voyager/static/js/2.24014fca.chunk.js.map",
+    "static/js/3.eaa7231e.chunk.js": "/voyager/static/js/3.eaa7231e.chunk.js",
+    "static/js/3.eaa7231e.chunk.js.map": "/voyager/static/js/3.eaa7231e.chunk.js.map",
     "index.html": "/voyager/index.html",
-    "static/css/main.503eef04.chunk.css.map": "/voyager/static/css/main.503eef04.chunk.css.map",
-    "static/js/2.2671bbc6.chunk.js.LICENSE.txt": "/voyager/static/js/2.2671bbc6.chunk.js.LICENSE.txt",
+    "static/css/main.8e905a10.chunk.css.map": "/voyager/static/css/main.8e905a10.chunk.css.map",
+    "static/js/2.24014fca.chunk.js.LICENSE.txt": "/voyager/static/js/2.24014fca.chunk.js.LICENSE.txt",
     "static/media/add.8950a2d2.svg": "/voyager/static/media/add.8950a2d2.svg",
     "static/media/aeroplane-gray.5e6bd7aa.svg": "/voyager/static/media/aeroplane-gray.5e6bd7aa.svg",
     "static/media/close.a94db416.svg": "/voyager/static/media/close.a94db416.svg",
@@ -27,9 +27,9 @@
     "static/media/settings.371a91de.svg": "/voyager/static/media/settings.371a91de.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0ac6e033.js",
-    "static/js/2.2671bbc6.chunk.js",
-    "static/css/main.503eef04.chunk.css",
-    "static/js/main.9efc7d1f.chunk.js"
+    "static/js/runtime-main.421bc964.js",
+    "static/js/2.24014fca.chunk.js",
+    "static/css/main.8e905a10.chunk.css",
+    "static/js/main.70821edf.chunk.js"
   ]
 }

@@ -30,6 +30,7 @@ The web app has no data transfer involved whatsoever, except for loading the map
 # Credits
 - ***Anushka Ramteke***, for the endless travel talks and our collective love to travel that inspired me to make this! She's also the person to credit for the color schemes used here.
 - ***[Akash Joshi](https://github.com/akash-joshi)***, for inardavently  introducing me to React. His React articles have been a lot of help too!
+- ***[Varun Joshi](https://github.com/joshvarun)***, for 
 - ***My beloved late father***, for gifting me an atlas when I was 6 years old, something that led me to develop an obsession towards geography and cartography.
 
 # Homage

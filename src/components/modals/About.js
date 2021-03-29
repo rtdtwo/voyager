@@ -95,7 +95,7 @@ const AboutModal = (props) => {
                     <Box mt={2} mb={6}>
                         <p className="small-text text-align-justify"><i><b>Anushka Ramteke</b></i>, for the endless travel talks and our collective love to travel that inspired me to make this! She's also the person to credit for the color schemes used here.
 <br /><br /><i><b>Akash Joshi</b></i>, for inardavently introducing me to React. His React articles have been a lot of help too!
-<br /><br /><i><b>Varun Joshi</b></i>, for saying <i>"Hey, why don't you try Chakra UI?"</i>. Varun is also a close friend and a well wisher!
+<br /><br /><i><b>Varun Joshi</b></i>, who said <i>"Hey, why don't you try Chakra UI?"</i> on a call. Varun is also a close friend and a well wisher!
 <br /><br /><i><b>My beloved late father</b></i>, for gifting me an atlas when I was 6 years old, something that led me to develop an obsession towards geography and cartography.</p>
                     </Box>
                     <p className="regular-text text-align-center all-caps"><b>Support this tool</b></p>

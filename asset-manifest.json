@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/voyager/static/css/main.8e905a10.chunk.css",
-    "main.js": "/voyager/static/js/main.70821edf.chunk.js",
-    "main.js.map": "/voyager/static/js/main.70821edf.chunk.js.map",
+    "main.js": "/voyager/static/js/main.6deacb81.chunk.js",
+    "main.js.map": "/voyager/static/js/main.6deacb81.chunk.js.map",
     "runtime-main.js": "/voyager/static/js/runtime-main.421bc964.js",
     "runtime-main.js.map": "/voyager/static/js/runtime-main.421bc964.js.map",
     "static/js/2.24014fca.chunk.js": "/voyager/static/js/2.24014fca.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.421bc964.js",
     "static/js/2.24014fca.chunk.js",
     "static/css/main.8e905a10.chunk.css",
-    "static/js/main.70821edf.chunk.js"
+    "static/js/main.6deacb81.chunk.js"
   ]
 }

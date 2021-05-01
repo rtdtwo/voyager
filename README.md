@@ -1,8 +1,11 @@
 # Voyager
 A travel itinerary visualizer that plots your destinations on a map.
 
-# Try it out
-Head [here](https://tatirajurishabh.github.io/voyager/) for a working demo.
+# Demo
+Try Voyager: [https://tatirajurishabh.github.io/voyager/](https://tatirajurishabh.github.io/voyager/)
+## Video
+[![Voyager Video Thumbnail](http://img.youtube.com/vi/ALDCmG4cFy4/0.jpg)](https://www.youtube.com/watch?v=ALDCmG4cFy4)
+
 
 # Libraries in use:
 - [React.js](https://github.com/facebook/react) using which Voyager is built.

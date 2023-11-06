@@ -2,7 +2,7 @@
 A travel itinerary visualizer that plots your destinations on a map.
 
 # Demo
-Try Voyager: [https://tatirajurishabh.github.io/voyager/](https://tatirajurishabh.github.io/voyager/)
+Try Voyager: [https://rtdtwo.github.io/voyager/](rtdtwo.github.io/voyager/)
 ## Video
 [![Voyager Video Thumbnail](http://img.youtube.com/vi/ALDCmG4cFy4/0.jpg)](https://www.youtube.com/watch?v=ALDCmG4cFy4)
 

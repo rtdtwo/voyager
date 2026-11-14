@@ -1,3 +1,5 @@
+> **Archived for now:** Voyager is an older project, and its code may be outdated. This repository is preserved as a demo of a travel itinerary visualizer that plots destinations on a map. I may return to it in the future, but it is not currently maintained.
+
 # Voyager
 A travel itinerary visualizer that plots your destinations on a map.
 
